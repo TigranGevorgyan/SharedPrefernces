@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.taron.homework_0205.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/act_progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:max="1000"
+        android:layout_marginEnd="20dp"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        />
+
+    <TextView
+        android:id="@+id/act_tv_prog_max_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="maxval"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="10dp"
+        style="?android:listSeparatorTextViewStyle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/act_tv_current_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="progres"/>
+
+        <View
+            android:id="@+id/act_tv_line1"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <SeekBar
+                android:id="@+id/act_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:max="100"/>
+
+            <TextView
+                android:id="@+id/act_tv_seek_max_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="maxval"
+                style="?android:listSeparatorTextViewStyle" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/act_current_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/act_tv_line2"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <CheckBox
+            android:id="@+id/chekbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/enable_toggles"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/act_tog2x_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/x2_off"
+                android:textOn="@string/x2_on"
+                android:enabled="false"
+            />
+            <ToggleButton
+                android:id="@+id/act_tog4x_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/x4_off"
+                android:textOn="@string/x4_on"
+                android:enabled="false"
+                />
+            <ToggleButton
+                android:id="@+id/act_tog6x_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/x6_off"
+                android:textOn="@string/x6_on"
+                android:enabled="false"
+                />
+            <ToggleButton
+                android:id="@+id/act_tog8x_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/x8_off"
+                android:textOn="@string/x8_on"
+                android:enabled="false"
+                />
+
+        </LinearLayout>
+
+        <View
+        android:id="@+id/act_tv_line3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/line_color"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp" />
+
+        <RadioGroup
+            android:id="@+id/act_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/act_rad_btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divide2"/>
+            <RadioButton
+                android:id="@+id/act_rad_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divide4"/>
+            <RadioButton
+                android:id="@+id/act_rad_btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divide8"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/act_clear_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_rad_buttons"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <View
+            android:id="@+id/act_tv_line4"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/line_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/act_switch1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/switch1_text"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:gravity="start"
+                />
+
+            <Switch
+                android:id="@+id/act_switch2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/switch2_text"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:gravity="start"
+                />
+
+            <Switch
+                android:id="@+id/act_switch3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/switch3_text"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                android:gravity="start"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Homework_02.05</string>
+    <string name="enable_toggles">Enable Toggles</string>
+    <string name="divide2">Divide by 2</string>
+    <string name="divide4">Divide by 4</string>
+    <string name="divide8">Divide by 8</string>
+    <string name="clear_rad_buttons">Clear radio button selection</string>
+    <string name="switch1_text">Add 10 to progress</string>
+    <string name="switch2_text">Add 20 to progress</string>
+    <string name="switch3_text">Add 30 to progress</string>
+    <string name="x8_on">8X ON</string>
+    <string name="x8off">8X OFF</string>
+    <string name="x6_off">6X OFF</string>
+    <string name="x6_on">6X ON</string>
+    <string name="x8_off">8X OFF</string>
+    <string name="x4_off">4X OFF</string>
+    <string name="x4_on">4X ON</string>
+    <string name="x2_off">2X OFF</string>
+    <string name="x2_on">2X ON</string>
+</resources>
